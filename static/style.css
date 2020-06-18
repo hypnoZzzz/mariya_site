@@ -1,0 +1,105 @@
+body {
+	background: rgb(224, 220, 220);
+	margin: 0px;
+	margin-right: 20px;
+	margin-left: 20px;
+
+}
+
+.home {
+	display: inline-flex;
+	height: 100%;
+}
+
+.logo {
+	padding-left: 15px;
+	padding-right: 30px;
+	padding-bottom: 100px;
+	width: 25%;
+}
+
+.logo-text {
+	letter-spacing: 5px;
+	font-size: 25px;
+}
+
+.job {
+	letter-spacing: 5px;
+	font-size: 15px;
+}
+
+.logo>a, .menu>li>a, .submenu>a {
+	text-decoration: none;
+	color: black;
+}
+
+.menu {
+	list-style-type: none;
+	padding-left: 5px;
+	padding-top: 45px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.menu>li {
+	margin-bottom: 3em;
+}
+
+.menu>li>a {
+	font-size: 10px;
+}
+
+.submenu>a {
+	font-size: 10px;
+}
+
+.menu>li>a:hover, .menu>li>a:active, .submenu>a:hover, .submenu>a:active {
+	color: rgb(232, 149, 232);
+} 
+
+.submenu {
+	flex-direction: column;
+	flex-grow: 2;
+	display: none;
+	position: relative;
+	height: 0;
+	opacity: 0;
+}
+
+.photo-carousel>img {
+	max-width: 100%;
+	margin-top: auto;
+	background: url(photos/1.jpg);
+	background-size: cover;	
+}
+
+.footer-contacts {
+	display: inline-flex;
+	padding-top: 10px;
+}
+
+.copy-div {
+	width: 50vw;
+	padding-left: 225px;
+
+}
+
+.contacts-icon {
+	justify-content: flex-end;
+	padding-left: 100px;
+}
+
+.copy {
+	padding-left: 15px;
+	font-size: 10px;
+}
+
+.name {
+	padding-left: 30px;
+}
+
+.icons>li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 10px;
+}

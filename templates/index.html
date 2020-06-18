@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>главная</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='style.css', v=1)}}">
+</head>
+
+<body>
+	<sidebar>
+		<div class="home">
+
+			<div class="logo logo-text">
+				<a href="#">
+					<p>Мария<br>Леонидова</p><p class="job">фотограф</p>
+				</a>
+				<ul class="menu">
+					<li><a href="">главная<br><br></a></li>
+					<li class="menuItem">
+						<a href="#">портфолио<br><br></a>
+						<div class="submenu">
+										<a href="">портрет</a><br>
+									<a href="">прогулка</a><br>
+								<a href="">live story</a><br>
+							<a href="">fashion</a>
+						</div>
+					</li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+			</div>
+
+			<div class="photo-carousel">
+				<img src="{{ url_for( 'static', filename='1.jpg', v=1)}}">
+			</div>
+
+		</div>
+
+	</sidebar>
+	<footer>
+		<div class="footer-contacts">
+			<div class="copy-div">
+				<p class="copy">&copy Все материалы предоставлены</p><p class="copy name"> Марией Леонидовой</p>
+			</div>
+			<div class="contacts-icon">
+				<ul class="icons">
+					<li>
+						<a href=""><img src="{{ url_for( 'static', filename='instagramm.svg', v=1)}}" alt=""></a>
+					</li>
+					<li>
+						<a href=""><img src="{{ url_for( 'static', filename='vk.svg', v=1)}}" alt=""></a>
+					</li>
+					<li>
+						<a href=""><img src="{{ url_for( 'static', filename='mail.svg', v=1)}}" alt=""></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+<script src="{{ url_for( 'static', filename='jScript.js', v=1)}}"></script>	
+</body>
+
+</html>
